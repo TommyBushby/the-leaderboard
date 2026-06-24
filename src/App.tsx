@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { AppShell } from './components/layout/AppShell'
 import { BracketPage } from './pages/BracketPage'
 import { HomePage } from './pages/HomePage'
+import { MatchesPage } from './pages/MatchesPage'
 import { RulesPage } from './pages/RulesPage'
 import { StandingsPage } from './pages/StandingsPage'
 
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
     children: [
       { path: '/', element: <HomePage /> },
       { path: '/bracket', element: <BracketPage /> },
+      { path: '/matches', element: <MatchesPage /> },
       { path: '/standings', element: <StandingsPage /> },
       { path: '/rules', element: <RulesPage /> },
     ],
